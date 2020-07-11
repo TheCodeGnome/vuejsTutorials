@@ -19,13 +19,32 @@ var app3 = new Vue({
     }
 })
 
-var app4=new Vue({
-    el:"#app-4",
+var app4 = new Vue({
+    el: "#app-4",
     data: {
-        todos:[
-            {text:'Learn JS'},
-            {text:'Learn Vue'},
-            {text:'Build something awesome'}
+        todos: [
+            { text: 'Learn JS' },
+            { text: 'Learn Vue' },
+            { text: 'Build something awesome' }
         ]
+    }
+})
+
+var app5 = new Vue({
+    el: "#app-5",
+    data: {
+        message: "HelloVue.js!"
+    },
+    methods: {
+        reverseMessage: function () {
+            this.message = this.message.split('').reverse().join('')
+        }
+    }
+})
+
+var app6 = new Vue({
+    el: "#app-6",
+    data: {
+        message: "Thing"
     }
 })
